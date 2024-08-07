@@ -2,9 +2,7 @@
 import {
     bubble
 } from "./bubble_sort.js";
-import {
-    heap
-} from "./heap_sort.js";
+
 import {
     quick
 } from './quick_sort.js';
@@ -71,7 +69,6 @@ function GenerateArr() {
 function start() {
     if (algo === "bubble") bubble(divs, arr);
     else if (algo === "quick") quick(divs, arr);
-    else if (algo === "heap") heap(divs, arr);
     else if (algo === "selection") selection(divs, arr);
     else if (algo === "insertion") insertion(divs, arr);
     console.log(algo);
